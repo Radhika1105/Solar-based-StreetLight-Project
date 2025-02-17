@@ -1,6 +1,24 @@
 ## Features
-- Automatic ON/OFF based on ambient light.
-- Solar-powered for energy efficiency.
-- Motion sensors for adaptive lighting.
-- Low power consumption.
+- **Motion-Activated Lighting:** The light turns on only when motion is detected in the dark.
+- **Energy Efficiency:** Solar-powered, with intelligent lighting based on human presence.
+- **Low Power Consumption:** Ideal for remote areas with limited electricity access.
 
+## Technologies Used
+- **Microcontroller:** Arduino
+- **Sensors:** PIR Motion Sensor, LDR
+- **Power Source:** Solar Panel with Battery Backup
+- **Programming Language:** C
+
+## How It Works
+1. During the day, the solar panel charges the battery.
+2. At night, the LDR detects darkness, activating the motion detection system.
+3. When a human passes by, the PIR sensor detects motion and turns on the light for a specified duration.
+4. If no further motion is detected, the light turns off to save power.
+
+## Installation
+1. **Hardware Setup:**
+   - Connect the solar panel, battery, LDR, and PIR sensor as per the circuit schematic in the `Hardware` folder.
+2. **Code:**
+   - Upload the code from the `Code` folder to the Arduino.
+3. **Test:**
+   - Place the setup in a dark environment and simulate motion in front of the PIR sensor.
